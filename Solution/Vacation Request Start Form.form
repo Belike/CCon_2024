@@ -1,0 +1,90 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.6.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "ac16d31"
+  },
+  "schemaVersion": 16,
+  "id": "StartRequestForm",
+  "components": [
+    {
+      "text": "# Vacation Request Process",
+      "label": "Text view",
+      "type": "text",
+      "layout": {
+        "row": "Row_1ecdzua",
+        "columns": null
+      },
+      "id": "Field_1sc5deu"
+    },
+    {
+      "label": "Employee Name:",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_03m9z88",
+        "columns": null
+      },
+      "id": "Field_07gbohp",
+      "key": "employeeName",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "label": "Employee E-Mail:",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1gn7hrg",
+        "columns": null
+      },
+      "id": "Field_0oo4rhz",
+      "key": "employeeEmail",
+      "validate": {
+        "required": true,
+        "validationType": "email"
+      }
+    },
+    {
+      "label": "Additional Information",
+      "type": "textarea",
+      "layout": {
+        "row": "Row_1w21ee1",
+        "columns": null
+      },
+      "id": "Field_0yhb17k",
+      "key": "employeeAdditionalInformation"
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Vacation Start Date",
+      "label": "Date time",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_1h53xeb",
+        "columns": null
+      },
+      "id": "Field_0wg745t",
+      "key": "vacationStartDate",
+      "validate": {
+        "required": true
+      }
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Vacation End Date",
+      "label": "Date time",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_1h53xeb",
+        "columns": null
+      },
+      "id": "Field_1kijvi1",
+      "key": "vacationEndDate",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default"
+}

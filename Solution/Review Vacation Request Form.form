@@ -1,0 +1,111 @@
+{
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.6.0",
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "ac16d31"
+  },
+  "schemaVersion": 16,
+  "id": "ReviewVacationRequestForm",
+  "components": [
+    {
+      "text": "# Review Vacation Request",
+      "label": "Text view",
+      "type": "text",
+      "layout": {
+        "row": "Row_0fne002",
+        "columns": null
+      },
+      "id": "Field_08s0ssg"
+    },
+    {
+      "label": "Employee Name:",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1hdtxl1",
+        "columns": null
+      },
+      "id": "Field_1ybn8o3",
+      "key": "employeeName",
+      "readonly": true
+    },
+    {
+      "label": "Employee EMail",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_131a67f",
+        "columns": null
+      },
+      "id": "Field_0ztce3c",
+      "key": "employeeEmail",
+      "readonly": true
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Vacation Start Date:",
+      "label": "Date time",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_0zmzloz",
+        "columns": null
+      },
+      "id": "Field_1wxzkpp",
+      "key": "vacationStartDate"
+    },
+    {
+      "subtype": "date",
+      "dateLabel": "Vacation End Date:",
+      "label": "Date time",
+      "type": "datetime",
+      "layout": {
+        "row": "Row_0zmzloz",
+        "columns": null
+      },
+      "id": "Field_0pv4nfb",
+      "key": "vacationEndDate"
+    },
+    {
+      "label": "Separator",
+      "type": "separator",
+      "layout": {
+        "row": "Row_1w2lbdt",
+        "columns": null
+      },
+      "id": "Field_03z9d5v"
+    },
+    {
+      "height": 120,
+      "label": "Spacer",
+      "type": "spacer",
+      "layout": {
+        "row": "Row_0j8pxhu",
+        "columns": null
+      },
+      "id": "Field_1qs66t7"
+    },
+    {
+      "values": [
+        {
+          "label": "Approve",
+          "value": "approved"
+        },
+        {
+          "label": "Decline",
+          "value": "declined"
+        }
+      ],
+      "label": "Approve or Decline?",
+      "type": "select",
+      "layout": {
+        "row": "Row_0gqxxbl",
+        "columns": null
+      },
+      "id": "Field_08hosbk",
+      "key": "managerDecision",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "type": "default"
+}
